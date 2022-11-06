@@ -36,7 +36,7 @@ namespace LotusV3.Views
             db.Insert(item);
             Device.BeginInvokeOnMainThread(async () =>
             {
-                var result = await this.DisplayAlert("Congratulation", "User Registeration Sucessfull", "Yes", "Cancel");
+                var result = await this.DisplayAlert("Felicidades!", "Usuario registrado con exito!", "Ok", "Continuar");
                 if (result)
                     await Navigation.PushAsync(new MainPage());
             });

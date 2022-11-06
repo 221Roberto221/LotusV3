@@ -16,5 +16,11 @@ namespace LotusV3
         {
             InitializeComponent();
         }
+ 
+        void PlayerChanged(object sender,EventArgs args)
+        {
+            RadioButton radioButton = sender as RadioButton;
+            Lbl_Auxiliar.Text = $"Has seleccionado: : {radioButton.Content}";
+        }
     }
 }

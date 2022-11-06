@@ -26,8 +26,8 @@
             <ScrollView Grid.Row="1">
                 <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
                     <Label Text="LOGIN" HorizontalOptions="Center" FontSize="Title"/>
-                    <Entry Placeholder="Usuario" x:Name="EntryUser" VerticalOptions="Center" HorizontalOptions="Center"/>
-                    <Entry Placeholder="Contraseña" IsPassword="True" x:Name="EntryPassword" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Entry Placeholder="Usuario" x:Name="EntryUser" VerticalOptions="CenterAndExpand"/>
+                    <Entry Placeholder="Contraseña" IsPassword="True" x:Name="EntryPassword" VerticalOptions="Center"/>
                     <Label Text="¿Olvidaste la contraseña?" HorizontalOptions="End"/>
                     <Button Text="Iniciar Sesion" BackgroundColor="#8B7556" TextColor="White" Clicked="IniciarSesion_Clicked"/>
                     <Button Text="Crear Usuario" BackgroundColor="#8B7556" TextColor="White" Clicked="NuevoUsuario_Clicked"/>

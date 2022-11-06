@@ -4,6 +4,15 @@
              x:Class="LotusV3.Calendario">
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Servicios" HorizontalOptions="Center" FontSize="Title"/>
+            <Label Text="Selecciona el servicio que desee."/>
+            <RadioButton Content="Corte"
+                         CheckedChanged="PlayerChanged"/>
+            <RadioButton Content="Tinte"
+                         CheckedChanged="PlayerChanged"
+                         IsChecked="True"/>
+            <Label x:Name="Lbl_Auxiliar" TextColor="Black"/>
+            
             <Label Text="Fecha de cita"/>
             <DatePicker/>
             <Label Text="Hora de la cita"/>
