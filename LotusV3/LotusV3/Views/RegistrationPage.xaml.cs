@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -41,6 +41,13 @@ namespace LotusV3.Views
                     await Navigation.PushAsync(new MainPage());
             });
 
+        }
+
+        private async void CorreoElectronico_Clicked(object sender, EventArgs e)
+        {
+            var mensaje = new EmailMessage(entryAsunto.Text, "<h1>Bienvenido</h1><span>Puede hacer uso de su membresia</span>", entryMail.Text);
+            mensaje.BodyFormat = EmailBodyFormat.Html;
+            await Email.ComposeAsync(mensaje);
         }
     }
 }
