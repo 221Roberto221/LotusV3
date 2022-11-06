@@ -15,11 +15,17 @@ namespace LotusV3.Views
         public HomePage()
         {
             InitializeComponent();
+            BtnCalendario.Clicked += (sender, e) =>
+            {
+                Navigation.PushAsync(new Calendario());
+            };
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
         }
+
+       
     }
 }

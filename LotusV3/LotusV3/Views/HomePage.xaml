@@ -7,6 +7,7 @@
             <Label Text="Bienvenido a Lotus Usuario!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="BtnCalendario" Text="Calendario" TextColor="#8B7556"/>
             <Button Text="Logout" Clicked="Button_Clicked" TextColor="#8B7556"/>
         </StackLayout>
     </ContentPage.Content>
