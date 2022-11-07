@@ -19,6 +19,10 @@ namespace LotusV3.Views
             {
                 Navigation.PushAsync(new Calendario());
             };
+            BtnMetodo.Clicked += (sender, e) =>
+            {
+                Navigation.PushAsync(new MetodoDePago());
+            };
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
