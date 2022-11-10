@@ -23,6 +23,10 @@ namespace LotusV3.Views
             {
                 Navigation.PushAsync(new MetodoDePago());
             };
+            BtnTinte.Clicked += (sender, e) =>
+            {
+                Navigation.PushAsync(new ListViewTintes());
+            };
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

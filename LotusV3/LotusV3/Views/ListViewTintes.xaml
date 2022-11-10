@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LotusV3.Views.ListView">
+             x:Class="LotusV3.Views.ListViewTintes">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Lista de cortes de cabello" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Title" TextColor="Black"/>
+            <Label Text="Lista de Tintes" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Title" TextColor="Black"/>
             <ListView ItemsSource="{Binding Tinte}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" 
                       ItemTapped="ListView_ItemTapped">
                 <ListView.ItemTemplate>
@@ -28,8 +28,6 @@
                                        Text="{Binding Nombre}"
                                        FontAttributes="Bold" />
                             </Grid>
-                            
-
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

@@ -10,6 +10,7 @@
             <Button x:Name="BtnListViewCortes" Text="Lista de cortes de cabello para hombre" Clicked="BtnListViewCortes_Clicked" TextColor="#8B7556" BackgroundColor="#7f052a"/>
             <Button x:Name="BtnCalendario" Text="Calendario" TextColor="#8B7556" BackgroundColor="#7f052a"/>
             <Button x:Name="BtnMetodo" Text="Metodo de Pago" TextColor="#8B7556" BackgroundColor="#7f052a"/>
+            <Button x:Name="BtnTinte" Text="Tintes" TextColor="#8B7556" BackgroundColor="#7f052a"/>
             <Button Text="Logout" Clicked="Button_Clicked" TextColor="#8B7556" BackgroundColor="#7f052a"/>
         </StackLayout>
     </ContentPage.Content>
