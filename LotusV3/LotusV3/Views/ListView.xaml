@@ -5,12 +5,14 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Lista de cortes de cabello" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Title" TextColor="Black"/>
-            <ListView ItemsSource="{Binding Tinte}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" 
+            <ListView ItemsSource="{Binding Corte}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" 
                       ItemTapped="ListView_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+                            
                             <Grid Padding="10">
+                                
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="*" />
@@ -19,6 +21,7 @@
                                     <ColumnDefinition Width="Auto" />
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
+                                
                                 <Image Grid.RowSpan="2"
                                    Source="{Binding Imagen}"
                                    Aspect="AspectFill"
