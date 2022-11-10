@@ -30,6 +30,9 @@ namespace LotusV3.Views
             await Navigation.PushAsync(new MainPage());
         }
 
-       
+        private async void BtnListViewCortes_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListView());
+        }
     }
 }

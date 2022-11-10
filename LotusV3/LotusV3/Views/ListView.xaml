@@ -4,9 +4,21 @@
              x:Class="LotusV3.Views.ListView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Lista de cortes de cabello" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+            <ListView x:Name="estilos">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Imagen}" WidthRequest="200" HeightRequest="100"/>
+                                <StackLayout>
+                                    <Label Text="{Binding Nombre}" FontSize="13" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                                </StackLayout>
+                                </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -4,7 +4,9 @@ using System.Text;
 
 namespace LotusV3.Models
 {
-    internal class Jugador
+    public class Cortes
     {
+        public string Imagen { get; set; }
+        public string Nombre { get; set; }
     }
 }
