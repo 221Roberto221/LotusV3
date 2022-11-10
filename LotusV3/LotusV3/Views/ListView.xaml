@@ -14,7 +14,22 @@
                                 <StackLayout>
                                     <Label Text="{Binding Nombre}" FontSize="13" TextColor="Black" HorizontalOptions="FillAndExpand"/>
                                 </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <ListView x:Name="estilos2">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Imagen}" WidthRequest="200" HeightRequest="100"/>
+                                <StackLayout>
+                                    <Label Text="{Binding Nombre}" FontSize="13" TextColor="Black" HorizontalOptions="FillAndExpand"/>
                                 </StackLayout>
+                            </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
