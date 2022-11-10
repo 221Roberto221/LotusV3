@@ -21,11 +21,14 @@ namespace LotusV3.Views
             };
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void Logout_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
         }
 
-       
+        private async void BtnListView_Clicked(object sender, EventArgs e)
+        {
+           await Navigation.PushAsync(new ListView());
+        }
     }
 }
