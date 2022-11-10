@@ -4,7 +4,7 @@
              x:Class="LotusV3.Calendario">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Servicios" HorizontalOptions="Center" FontSize="Title"/>
+            <Label Text="Servicios" HorizontalOptions="Center" FontSize="Title" TextColor="Black"/>
             <Label Text="Selecciona el servicio que desee."/>
             <RadioButton Content="Corte"
                          CheckedChanged="PlayerChanged"/>

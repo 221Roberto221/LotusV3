@@ -4,7 +4,7 @@
              x:Class="LotusV3.Views.ListView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Lista de cortes de cabello" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+            <Label Text="Lista de cortes de cabello" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Title" TextColor="Black"/>
             <ListView x:Name="estilos">
                 <ListView.ItemTemplate>
                     <DataTemplate>
