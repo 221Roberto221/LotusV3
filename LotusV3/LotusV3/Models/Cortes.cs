@@ -8,5 +8,11 @@ namespace LotusV3.Models
     {
         public string Imagen { get; set; }
         public string Nombre { get; set; }
+       
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

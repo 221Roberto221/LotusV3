@@ -5,31 +5,31 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Lista de cortes de cabello" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Title" TextColor="Black"/>
-            <ListView x:Name="estilos">
+            <ListView ItemsSource="{Binding Corte}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" 
+                      ItemTapped="ListView_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="{Binding Imagen}" WidthRequest="200" HeightRequest="100"/>
-                                <StackLayout>
-                                    <Label Text="{Binding Nombre}" FontSize="13" TextColor="Black" HorizontalOptions="FillAndExpand"/>
-                                </StackLayout>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.RowSpan="2"
+                                   Source="{Binding Imagen}"
+                                   Aspect="AspectFill"
+                                   HeightRequest="60"
+                                   WidthRequest="60" />
+                                <Label Grid.Column="1"
+                                       Text="{Binding Nombre}"
+                                       FontAttributes="Bold" />
+                            </Grid>
+                            
 
-            <ListView x:Name="estilos2">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="{Binding Imagen}" WidthRequest="200" HeightRequest="100"/>
-                                <StackLayout>
-                                    <Label Text="{Binding Nombre}" FontSize="13" TextColor="Black" HorizontalOptions="FillAndExpand"/>
-                                </StackLayout>
-                            </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
