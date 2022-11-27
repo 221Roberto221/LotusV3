@@ -11,7 +11,9 @@
         </ResourceDictionary>
     </Page.Resources>
     <ContentPage.Content>
-        <StackLayout>
+        <ScrollView>
+            
+            <StackLayout>
             <Label Text="Servicios" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
                FontSize="Large" TextColor="Black"/>
             <Label Text="Selecciona el servicio que desee."/>
@@ -29,6 +31,7 @@
             <DatePicker/>
             <Label Text="Hora de la cita"/>
             <TimePicker/>
+            <StackLayout>
             <Label Text="Lista de cortes de cabello" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Title" TextColor="Black"/>
             <ListView ItemsSource="{Binding Corte}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" 
                       ItemTapped="ListView_ItemTapped">
@@ -62,6 +65,8 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            </StackLayout>
+                
             <Grid Padding="5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -114,5 +119,6 @@
 
             </Grid>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
