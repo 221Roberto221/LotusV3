@@ -1,18 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LotusV3.Views.ListView">
+             x:Class="LotusV3.Views.ListViewCortes">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Lista de cortes de cabello" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Title" TextColor="Black"/>
-            <ListView ItemsSource="{Binding Corte}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" 
+            <Label Text="Seleccione Corte de Pelo" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Title" TextColor="Black"/>
+            <ListView ItemsSource="{Binding Cortes}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" 
                       ItemTapped="ListView_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            
                             <Grid Padding="10">
-                                
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="*" />
@@ -21,7 +19,6 @@
                                     <ColumnDefinition Width="Auto" />
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
-                                
                                 <Image Grid.RowSpan="2"
                                    Source="{Binding Imagen}"
                                    Aspect="AspectFill"
@@ -31,8 +28,6 @@
                                        Text="{Binding Nombre}"
                                        FontAttributes="Bold" />
                             </Grid>
-                            
-
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

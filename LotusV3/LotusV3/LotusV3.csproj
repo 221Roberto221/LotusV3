@@ -22,13 +22,17 @@
     <EmbeddedResource Update="Calendario.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="ListViewCortes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="MetodoDePago.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ListView.xaml">
+    <EmbeddedResource Update="Views\ListViewCortes.xaml">
+      <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ListViewTintes.xaml">
@@ -41,5 +45,12 @@
 
   <ItemGroup>
     <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\ListViewCortes.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ListViewCortes.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

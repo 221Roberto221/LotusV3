@@ -1,4 +1,5 @@
 ﻿using LotusV3.Models;
+using LotusV3.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace LotusV3
             InitializeComponent();
             BtnListView.Clicked += (sender, e) =>
             {
-                Navigation.PushAsync(new MetodoDePago());
+                Navigation.PushAsync(new ListViewCortes());
             };
             //    Corte = new List<Cortes>();
 
@@ -67,7 +68,7 @@ namespace LotusV3
         }
         private async void BtnListViewCortes_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MetodoDePago());
+            await Navigation.PushAsync(new ListViewCortes());
         }
     }
 }

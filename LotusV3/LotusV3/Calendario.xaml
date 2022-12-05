@@ -29,7 +29,7 @@
                 <Label Text="Hora de la cita" TextColor="WhiteSmoke" FontSize="Title" FontAttributes="Bold"/>
                 <TimePicker/>
                 <StackLayout>
-                    <Button x:Name="BtnListView" Text="Agendar cita" TextColor="White" BackgroundColor="#7f052a" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" WidthRequest="130" HeightRequest="40"/>
+                    <Button x:Name="BtnListView" Text="Lista de cortes de cabello para hombre" Clicked="BtnListViewCortes_Clicked" TextColor="#8B7556" BackgroundColor="#7f052a"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
