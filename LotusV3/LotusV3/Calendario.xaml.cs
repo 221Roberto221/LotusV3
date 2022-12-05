@@ -19,7 +19,7 @@ namespace LotusV3
             InitializeComponent();
             BtnListView.Clicked += (sender, e) =>
             {
-                Navigation.PushAsync(new ListView());
+                Navigation.PushAsync(new MetodoDePago());
             };
             //    Corte = new List<Cortes>();
 
@@ -67,7 +67,7 @@ namespace LotusV3
         }
         private async void BtnListViewCortes_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ListView());
+            await Navigation.PushAsync(new MetodoDePago());
         }
     }
 }
