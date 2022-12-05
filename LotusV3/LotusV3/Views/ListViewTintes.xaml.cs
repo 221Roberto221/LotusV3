@@ -56,5 +56,10 @@ namespace LotusV3.Views
         {
             Tintes tappedItem = e.Item as Tintes;
         }
+
+        private async void BtnSiguiente_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MetodoDePago());
+        }
     }
 }

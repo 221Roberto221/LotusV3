@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LotusV3.Views.ListViewTintes">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="Gray">
+            <Image Source ="paso3.png"/>
+
             <Label Text="Lista de Tintes" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Title" TextColor="Black"/>
             <ListView ItemsSource="{Binding Tinte}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" 
                       ItemTapped="ListView_ItemTapped">
@@ -22,8 +24,8 @@
                                 <Image Grid.RowSpan="2"
                                    Source="{Binding Imagen}"
                                    Aspect="AspectFill"
-                                   HeightRequest="60"
-                                   WidthRequest="60" />
+                                   HeightRequest="150"
+                                   WidthRequest="110" />
                                 <Label Grid.Column="1"
                                        Text="{Binding Nombre}"
                                        FontAttributes="Bold" />
@@ -32,6 +34,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button x:Name="BtnSiguiente" Text="Siguiente" BackgroundColor="#7f052a" TextColor="WhiteSmoke" Clicked="BtnSiguiente_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

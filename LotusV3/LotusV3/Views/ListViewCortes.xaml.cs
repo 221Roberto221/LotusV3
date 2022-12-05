@@ -40,7 +40,7 @@ namespace LotusV3.Views
             Cortes.Add(new Cortes
             {
                 Nombre = "Corte Mohicano",
-                Imagen = "https://ath2.unileverservices.com/wp-content/uploads/sites/13/2021/03/16194055/tipos-cortes-hombres-mohicano-532x611.jpg"
+                Imagen = "https://ath2.unileverservices.com/wp-content/uploads/sites/13/2021/03/16165004/tipos-cortes-hombres-largo-768x1152.jpg?fbclid=IwAR1OxJ-_u_pIm8W6q5J0AfzLlWK3s25jIbpiKaBqU-UAC4oGAZ4Gz8SsQws"
 
             });
 
@@ -57,6 +57,11 @@ namespace LotusV3.Views
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
            Cortes tappedItem = e.Item as Cortes;
+        }
+
+        private async void BtnSiguiente_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListViewTintes());
         }
     }
 }

@@ -27,7 +27,6 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-
         <Label Text="Metodo de Pago" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
                FontSize="Large" TextColor="Black"/>
         <Label Text="Ingresa la informacion de tu tarjeta" FontSize="Medium"
@@ -63,7 +62,7 @@
         </Entry>
 
         <Button Text="Siguiente" Grid.Row="5" Grid.ColumnSpan="3" CornerRadius="25" 
-                TextColor="White" BackgroundColor="#00AE0C"/>
+                TextColor="White" BackgroundColor="#00AE0C" x:Name="Siguiente" Clicked="Siguiente_Clicked"/>
 
     </Grid>
 </ContentPage>

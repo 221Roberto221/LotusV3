@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LotusV3.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,12 @@ namespace LotusV3
         public MetodoDePago()
         {
             InitializeComponent();
+        }
+
+        private async void Siguiente_Clicked(object sender, EventArgs e)
+        {
+            await this.DisplayAlert("Felicidades!", "Cita programada con exito!", "Ok", "Continuar");
+            await Navigation.PushAsync(new HomePage());
         }
     }
 }
