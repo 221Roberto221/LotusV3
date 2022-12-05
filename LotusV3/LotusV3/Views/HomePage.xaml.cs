@@ -19,14 +19,26 @@ namespace LotusV3.Views
             {
                 Navigation.PushAsync(new Calendario());
             };
-            BtnMetodo.Clicked += (sender, e) =>
+            BtnCalendario1.Clicked += (sender, e) =>
             {
-                Navigation.PushAsync(new MetodoDePago());
+                Navigation.PushAsync(new Calendario());
             };
-            BtnTinte.Clicked += (sender, e) =>
+            BtnCalendario2.Clicked += (sender, e) =>
             {
-                Navigation.PushAsync(new ListViewTintes());
+                Navigation.PushAsync(new Calendario());
             };
+            BtnCalendario3.Clicked += (sender, e) =>
+            {
+                Navigation.PushAsync(new Calendario());
+            };
+            //BtnMetodo.Clicked += (sender, e) =>
+            //{
+            //    Navigation.PushAsync(new MetodoDePago());
+            //};
+            //BtnTinte.Clicked += (sender, e) =>
+            //{
+            //    Navigation.PushAsync(new ListViewTintes());
+            //};
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

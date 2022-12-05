@@ -3,15 +3,71 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LotusV3.Views.HomePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Bienvenido a Lotus Usuario!"
-                VerticalOptions="CenterAndExpand" 
+        <StackLayout BackgroundColor="Gray">
+
+            <StackLayout>
+                <Label Text="Bienvenido a Lotus" FontSize="Title" TextColor="WhiteSmoke"
+                    VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button x:Name="BtnListViewCortes" Text="Lista de cortes de cabello para hombre" Clicked="BtnListViewCortes_Clicked" TextColor="#8B7556" BackgroundColor="#7f052a"/>
-            <Button x:Name="BtnCalendario" Text="Calendario" TextColor="#8B7556" BackgroundColor="#7f052a"/>
-            <Button x:Name="BtnMetodo" Text="Metodo de Pago" TextColor="#8B7556" BackgroundColor="#7f052a"/>
-            <Button x:Name="BtnTinte" Text="Tintes" TextColor="#8B7556" BackgroundColor="#7f052a"/>
-            <Button Text="Logout" Clicked="Button_Clicked" TextColor="#8B7556" BackgroundColor="#7f052a"/>
+                <Grid>
+
+                </Grid>
+                <Grid>
+                    <Image Source="Hongo.png" WidthRequest="120" HeightRequest="150" HorizontalOptions="Start">
+                    </Image>
+                    <Label Text="Corte de Hongo para Hombre" WidthRequest="160" HorizontalOptions="CenterAndExpand" FontSize="Body" TextColor="WhiteSmoke" FontAttributes="Bold">
+                    </Label>
+                    <Label Text="Precio: $200.00 MXN" WidthRequest="160" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Body" TextColor="WhiteSmoke" FontAttributes="Bold">
+                    </Label>
+                    <StackLayout>
+                        <Button x:Name="BtnCalendario" Text="Agendar cita" TextColor="White" BackgroundColor="#7f052a" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" WidthRequest="130" HeightRequest="40"/>
+                    </StackLayout>
+
+                </Grid>
+                <Grid>
+                    <Image Source="Militar.png" WidthRequest="120" HeightRequest="150" HorizontalOptions="Start">
+                    </Image>
+                    <Label Text="Corte Militar para Hombre" WidthRequest="160" HorizontalOptions="CenterAndExpand" FontSize="Body" TextColor="WhiteSmoke" FontAttributes="Bold">
+                    </Label>
+                    <Label Text="Precio: $200.00 MXN" WidthRequest="160" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Body" TextColor="WhiteSmoke" FontAttributes="Bold">
+                    </Label>
+                    <StackLayout>
+                        <Button x:Name="BtnCalendario1" Text="Agendar cita" TextColor="White" BackgroundColor="#7f052a" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" WidthRequest="130" HeightRequest="40"/>
+                    </StackLayout>
+
+                </Grid>
+                <Grid>
+                    <Image Source="Clasico.png" WidthRequest="120" HeightRequest="150" HorizontalOptions="Start">
+                    </Image>
+                    <Label Text="Corte Clasico para Hombre" WidthRequest="160" HorizontalOptions="CenterAndExpand" FontSize="Body" TextColor="WhiteSmoke" FontAttributes="Bold">
+                    </Label>
+                    <Label Text="Precio: $200.00 MXN" WidthRequest="160" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Body" TextColor="WhiteSmoke" FontAttributes="Bold">
+                    </Label>
+                    <StackLayout>
+                        <Button x:Name="BtnCalendario2" Text="Agendar cita" TextColor="White" BackgroundColor="#7f052a" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" WidthRequest="130" HeightRequest="40"/>
+                    </StackLayout>
+
+                </Grid>
+                <Grid>
+                    <Image Source="Largo.png" WidthRequest="120" HeightRequest="150" HorizontalOptions="Start">
+                    </Image>
+                    <Label Text="Corte Clasico para Hombre" WidthRequest="160" HorizontalOptions="CenterAndExpand" FontSize="Body" TextColor="WhiteSmoke" FontAttributes="Bold">
+                    </Label>
+                    <Label Text="Precio: $200.00 MXN" WidthRequest="160" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Body" TextColor="WhiteSmoke" FontAttributes="Bold">
+                    </Label>
+                    <StackLayout>
+                        <Button x:Name="BtnCalendario3" Text="Agendar cita" TextColor="White" BackgroundColor="#7f052a" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" WidthRequest="130" HeightRequest="40"/>
+                    </StackLayout>
+
+                </Grid>
+            </StackLayout>
+
+            <!--<Button x:Name="BtnListView" Text="Lista de cortes de cabello para hombre" Clicked="BtnListViewCortes_Clicked" TextColor="#8B7556" BackgroundColor="#7f052a"/>-->
+            <!--<Button x:Name="BtnCalendario" Text="Calendario" TextColor="#8B7556" BackgroundColor="#7f052a"/>-->
+            <!--<Button x:Name="BtnMetodo" Text="Metodo de Pago" TextColor="#8B7556" BackgroundColor="#7f052a"/>
+            <Button x:Name="BtnTinte" Text="Tintes" TextColor="#8B7556" BackgroundColor="#7f052a"/>-->
+            <Button Text="Logout" Clicked="Button_Clicked" TextColor="WhiteSmoke" BackgroundColor="#7f052a" VerticalOptions="EndAndExpand"/>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

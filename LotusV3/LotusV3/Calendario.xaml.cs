@@ -17,40 +17,44 @@ namespace LotusV3
         public Calendario()
         {
             InitializeComponent();
-            Corte = new List<Cortes>();
-
-            Corte.Add(new Cortes
+            BtnListView.Clicked += (sender, e) =>
             {
-                Nombre = "Corte Clasico",
-                Imagen = "https://ath2.unileverservices.com/wp-content/uploads/sites/13/2021/03/16182444/tipos-cortes-hombres-clasico-532x798.jpg"
+                Navigation.PushAsync(new ListView());
+            };
+            //    Corte = new List<Cortes>();
 
-            });
-            Corte.Add(new Cortes
-            {
-                Nombre = "Corte Militar para Hombre",
-                Imagen = "https://ath2.unileverservices.com/wp-content/uploads/sites/13/2021/03/16165558/tipos-cortes-hombres-militar-532x797.jpg"
+            //    Corte.Add(new Cortes
+            //    {
+            //        Nombre = "Corte Clasico",
+            //        Imagen = "https://ath2.unileverservices.com/wp-content/uploads/sites/13/2021/03/16182444/tipos-cortes-hombres-clasico-532x798.jpg"
 
-            });
-            Corte.Add(new Cortes
-            {
-                Nombre = "Corte Hongo para Hombre",
-                Imagen = "https://ath2.unileverservices.com/wp-content/uploads/sites/13/2021/03/16170601/tipos-cortes-hombres-hongo-532x798.jpg"
+            //    });
+            //    Corte.Add(new Cortes
+            //    {
+            //        Nombre = "Corte Militar para Hombre",
+            //        Imagen = "https://ath2.unileverservices.com/wp-content/uploads/sites/13/2021/03/16165558/tipos-cortes-hombres-militar-532x797.jpg"
 
-            });
-            Corte.Add(new Cortes
-            {
-                Nombre = "Corte Mohicano",
-                Imagen = "https://ath2.unileverservices.com/wp-content/uploads/sites/13/2021/03/16194055/tipos-cortes-hombres-mohicano-532x611.jpg"
+            //    });
+            //    Corte.Add(new Cortes
+            //    {
+            //        Nombre = "Corte Hongo para Hombre",
+            //        Imagen = "https://ath2.unileverservices.com/wp-content/uploads/sites/13/2021/03/16170601/tipos-cortes-hombres-hongo-532x798.jpg"
 
-            });
+            //    });
+            //    Corte.Add(new Cortes
+            //    {
+            //        Nombre = "Corte Mohicano",
+            //        Imagen = "https://ath2.unileverservices.com/wp-content/uploads/sites/13/2021/03/16194055/tipos-cortes-hombres-mohicano-532x611.jpg"
+
+            //    });
 
             BindingContext = this;
         }
- 
+
         void PlayerChanged(object sender,EventArgs args)
         {
             RadioButton radioButton = sender as RadioButton;
-            Lbl_Auxiliar.Text = $"Has seleccionado: : {radioButton.Content}";
+            //Lbl_Auxiliar.Text = $"Has seleccionado: : {radioButton.Content}";
         }
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
@@ -60,6 +64,10 @@ namespace LotusV3
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             Cortes tappedItem = e.Item as Cortes;
+        }
+        private async void BtnListViewCortes_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListView());
         }
     }
 }
